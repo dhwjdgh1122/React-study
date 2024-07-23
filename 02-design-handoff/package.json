@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "design-to-develop-handoff",
+  "version": "0.0.1",
+  "description": "Figma 디자인을 개발 코드로 핸드오프(Hand-off)합니다.",
+  "scripts": {
+    "dev": "pnpm dlx live-server --host=localhost --port=3000 --no-browser"
+  }
+}

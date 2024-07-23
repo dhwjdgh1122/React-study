@@ -1,0 +1,10 @@
+.demo {
+  margin: 0;
+  background: var(--background);
+  color: var(--forground);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+}

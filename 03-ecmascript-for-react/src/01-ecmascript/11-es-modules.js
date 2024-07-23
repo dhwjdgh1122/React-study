@@ -10,29 +10,14 @@
 // ├── removeSpaceHTMLString.js
 // └── shuffle.js
 
-/**@type {(n: number) => string} */
-function numberWithComma(n) {
-  return n.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-}
-
-/** @type {(htmlString: string) => string} */
-function removeSpaceHTMLString(htmlString) {
-  return htmlString.replace(/\s+<|\n|>\s+/g, function ($1) {
-    return $1.indexOf('<') > -1 ? '<' : $1.indexOf('>') > -1 ? '>' : '';
-  });
-}
-
-/**@type {(list: any[]) => any[]} */
-function shuffle(list) {
-  let _ = [...list];
-  for (let i = _.length - 1; i > 0; --i) {
-    let k = Math.floor(Math.random() * (i + 1));
-    [_[k], _[i]] = [_[i], _[k]];
-  }
-  return _;
-}
-
 // --------------------------------------------------------------------------
+
+// 모듈 가져오기(import modules)
+import {
+  numberWithComma,
+  removeSpaceHTMLString,
+  shuffle,
+} from './utils/index.js';
 
 let price = `${numberWithComma(9643200)}원`;
 console.log(price);
