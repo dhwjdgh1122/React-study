@@ -3,5 +3,11 @@
   "type": "module",
   "name": "react-component-with-props",
   "description": "리액트 라이브러리를 사용해 사용자 인터페이스를 구축하는 방법을 학습합니다.",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node server.mjs"
+  },
+  "devDependencies": {
+    "live-server": "1.2.2"
+  }
 }
