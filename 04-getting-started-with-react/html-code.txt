@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>React 시작하기</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/react.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="src/styles/main.css"
+    />
+  </head>
+
+  <body>
+
+    <ul
+      class="architectures"
+      lang="en"
+    >
+      <li class="item">
+        <img
+          src="/architectures/architecture-1.jpg"
+          alt=""
+        />
+        <span class="content">Climatology</span>
+        <button
+          type="button"
+          title="아이템 이동 (위/아래 화살표 키 활용)"
+        >
+          <img
+            src="/icons/handle.svg"
+            alt="아이템 이동 (위/아래 화살표 키 활용)"
+          />
+        </button>
+      </li>
+      <li class="item">
+        <img
+          src="/architectures/architecture-2.jpg"
+          alt=""
+        />
+        <span class="content">History of Architecture</span>
+        <button
+          type="button"
+          title="아이템 이동 (위/아래 화살표 키 활용)"
+        >
+          <img
+            src="/icons/handle.svg"
+            alt="아이템 이동 (위/아래 화살표 키 활용)"
+          />
+        </button>
+      </li>
+      <li class="item">
+        <img
+          src="/architectures/architecture-3.jpg"
+          alt=""
+        />
+        <span class="content">Graphics</span>
+        <button
+          type="button"
+          title="아이템 이동 (위/아래 화살표 키 활용)"
+        >
+          <img
+            src="/icons/handle.svg"
+            alt="아이템 이동 (위/아래 화살표 키 활용)"
+          />
+        </button>
+      </li>
+      <li class="item">
+        <img
+          src="/architectures/architecture-4.jpg"
+          alt=""
+        />
+        <span class="content">Building design</span>
+        <button
+          type="button"
+          title="아이템 이동 (위/아래 화살표 키 활용)"
+        >
+          <img
+            src="/icons/handle.svg"
+            alt="아이템 이동 (위/아래 화살표 키 활용)"
+          />
+        </button>
+      </li>
+    </ul>
+
+  </body>
+
+</html>

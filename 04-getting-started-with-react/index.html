@@ -13,42 +13,35 @@
       type="image/svg+xml"
       href="/react.svg"
     />
-    <link rel="stylesheet" href="src/styles/main.css"/>
+    <link
+      rel="stylesheet"
+      href="src/styles/main.css"
+    />
+
+    <!-- 전역 객체(GlobalThis) 오염시키지 않는 것이 권장 -->
+    <!-- <script
+      src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      crossorigin
+    ></script> -->
+
+    <script
+      type="module"
+      src="src/main.js"
+    ></script>
   </head>
 
-  <body> 
+  <body>
+    <!-- JavaScript 앱 사용자를 위한 최소한의 노력 : 모든 이들의 접근을 위하여! -->
+    <noscript>이 앱은 JavaScript 활성화가 필요합니다. 브라우저에 JavaScript를 활성화해주세요.</noscript>
 
-    <ul class="architectures" lang="en">
-      <li class="item">
-        <img src="/architectures/architecture-1.jpg" alt="" />
-        <span class="content">Climatology</span>
-        <button type="button" title="아이템 이동 (위/아래 화살표 키 활용)">
-          <img src="/icons/handle.svg" alt="아이템 이동 (위/아래 화살표 키 활용)" />
-        </button>
-      </li>
-      <li class="item">
-        <img src="/architectures/architecture-2.jpg" alt="" />
-        <span class="content">History of Architecture</span>
-        <button type="button" title="아이템 이동 (위/아래 화살표 키 활용)">
-          <img src="/icons/handle.svg" alt="아이템 이동 (위/아래 화살표 키 활용)" />
-        </button>
-      </li>
-      <li class="item">
-        <img src="/architectures/architecture-3.jpg" alt="" />
-        <span class="content">Graphics</span>
-        <button type="button" title="아이템 이동 (위/아래 화살표 키 활용)">
-          <img src="/icons/handle.svg" alt="아이템 이동 (위/아래 화살표 키 활용)" />
-        </button>
-      </li>
-      <li class="item">
-        <img src="/architectures/architecture-4.jpg" alt="" />
-        <span class="content">Building design</span>
-        <button type="button" title="아이템 이동 (위/아래 화살표 키 활용)">
-          <img src="/icons/handle.svg" alt="아이템 이동 (위/아래 화살표 키 활용)" />
-        </button>
-      </li>
-    </ul>
-    
+    <!-- 리액트 돔: 리액트 앱을 이 컨테이너 요소에 렌더링 -->
+    <div id="root"></div>
+
   </body>
 
 </html>
