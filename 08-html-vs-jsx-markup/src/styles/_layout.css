@@ -1,0 +1,16 @@
+[class*="layout-"] {
+  display: flex;
+}
+
+.layout-row {
+  flex-direction: row;
+}
+
+.layout-column {
+  flex-direction: column;
+}
+
+.layout-exact-center {
+  justify-content: center;
+  align-items: center;
+}
