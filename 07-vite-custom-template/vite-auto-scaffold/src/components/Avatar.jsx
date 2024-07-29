@@ -1,6 +1,5 @@
-import React from 'https://esm.sh/react';
-import { createRoot } from 'https://esm.sh/react-dom';
 
+// eslint-disable-next-line react/prop-types
 function Avatar({ name, photo, status = 'offline', size = 64 }) {
   let iconPath = '';
   let statusMessage = '';
@@ -37,29 +36,4 @@ function Avatar({ name, photo, status = 'offline', size = 64 }) {
   );
 }
 
-function AvatarListPage() {
-  return (
-    <ul className="AvatarList">
-      <li>
-        <Avatar name="야무" photo="man-02.jpg" status="online" />
-      </li>
-      <li>
-        <Avatar name="범쌤" photo="man-04.jpg" status="away" />
-      </li>
-      <li>
-        <Avatar name="주원" photo="woman-04.jpg" status="dont-disturb" />
-      </li>
-      <li>
-        <Avatar name="정민" photo="woman-01.jpg" />
-      </li>
-    </ul>
-  );
-}
-
-const container = document.getElementById('react-app');
-
-if (container) {
-  createRoot(container).render(<AvatarListPage />);
-} else {
-  console.warn('문서에 "#app" 요소가 존재하지 않습니다.');
-}
+export default Avatar;

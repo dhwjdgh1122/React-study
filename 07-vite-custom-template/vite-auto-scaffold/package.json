@@ -1,7 +1,8 @@
 {
   "name": "vite-auto-scaffold",
+  "description": "Vite를 사용해 자동 스캐폴딩 구성 (장점: 다 자동 구성되서 편해요, 단점: 응용을 못해요 ㅠㅡㅠ)",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",

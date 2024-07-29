@@ -1,3 +1,5 @@
+
+// eslint-disable-next-line react/prop-types
 function Avatar({ name, photo, status = 'offline', size = 64 }) {
   let iconPath = '';
   let statusMessage = '';
@@ -31,7 +33,7 @@ function Avatar({ name, photo, status = 'offline', size = 64 }) {
         <img src={iconPath} alt="" />
       </figcaption>
     </figure>
-  )
+  );
 }
 
 export default Avatar;
