@@ -3,6 +3,10 @@ body {
   min-block-size: 100vh;
   background-color: var(--background);
   color: var(--forground);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .architectures {
@@ -29,6 +33,14 @@ body {
     gap: 20px;
     border-radius: var(--rounded-lg, 8px);
     background: var(--black, #000);
+
+    >img {
+      --size: 64px;
+      inline-size: var(--size);
+      block-size: var(--size);
+      border-radius: var(--radiux-md, 6px);
+      border: 3px solid var(--white, #fff);
+    }
 
     &.dragging :where(img, .content, button) {
       opacity: 0.4;
