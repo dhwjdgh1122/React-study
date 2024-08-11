@@ -1,0 +1,65 @@
+.component {
+  overflow: auto;
+  resize: horizontal;
+  min-inline-size: 160px;
+  max-inline-size: 320px;
+  min-block-size: 94vh;
+  margin-block-start: 1vh;
+  padding: 20px;
+  border-inline-end: 1px dashed var(--accent-color, #440fbf);
+
+  h2 {
+    display: inline-block;
+    margin-block: 0 20px;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      content: '🎩';
+      font-size: 20px;
+      position: absolute;
+      right: -10px;
+      top: -8px;
+      rotate: 25deg;
+      animation: movingHat 4s cubic-bezier(0.66, 0.01, 0.31, 1) infinite;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column;
+    margin-block-start: -4px;
+  }
+
+  a {
+    opacity: 0.75;
+    display: flex;
+    margin-inline: -4px;
+    padding: 4px;
+    font-size: 14px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes movingHat {
+
+  0%,
+  45% {
+    translate: 0 0;
+    rotate: 25deg;
+  }
+
+  70% {
+    translate: 1px -15px;
+    rotate: 0.7turn;
+  }
+
+  100% {
+    translate: 0 0;
+    rotate: 1.07turn;
+  }
+}

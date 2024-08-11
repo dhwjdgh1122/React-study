@@ -1,0 +1,22 @@
+.component {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 40px;
+  margin-block-start: 40px;
+
+  .button {
+    opacity: 0.9;
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-weight: 800;
+    background-color: var(--accent-color);
+    color: var(--white);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+}

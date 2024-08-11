@@ -1,0 +1,16 @@
+.component {
+  min-block-size: 300px;
+  block-size: calc(100vh - 300px);
+  inline-size: calc(100vw - 260px);
+  margin-inline-end: 40px;
+  position: relative;
+
+  ul {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    margin: 0;
+    padding-inline-start: 0;
+    block-size: inherit;
+    inline-size: inherit;
+  }
+}

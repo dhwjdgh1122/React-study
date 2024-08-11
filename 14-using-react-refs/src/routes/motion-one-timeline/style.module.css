@@ -1,0 +1,31 @@
+.component {
+  margin-block-start: 2px;
+  margin-inline-start: 20px;
+  color: #747178;
+
+  .headline {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--accent-color);
+  }
+
+  .headline2 {
+    margin-block-start: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--accent-color);
+  }
+
+  .description {
+    display: flex;
+    flex-flow: column;
+    gap: 0.3rem;
+    margin-inline-end: 24px;
+    margin-block-end: 24px;
+    font-size: 14px;
+
+    * {
+      margin: 0;
+    }
+  }
+}

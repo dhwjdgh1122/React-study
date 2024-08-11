@@ -1,0 +1,27 @@
+.progress {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  block-size: 8px;
+
+  background-color: #e8702a;
+  backdrop-filter: blur(4px);
+  transform-origin: left center;
+  transform: scaleX(0.01); /* 0 → 1 */
+}
+
+.output {
+  position: absolute;
+  z-index: 1000;
+  top: 30px;
+  right: 40px;
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  padding: 12px 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 999px;
+  color: var(--white, #fff);
+  font-size: 22px;
+}
