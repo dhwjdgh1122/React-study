@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #5952db;
+
+  background-color: #fff;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #656270;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--primary-color);
+}
+
+button {
+  cursor: pointer;
+  padding: 0.6em 1.2em;
+  border: 1px solid currentColor;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  transition: border-color 0.25s;
+  border-radius: 6px;
+  
+  &:hover:not(:disabled) {
+    color: var(--primary-color);
+  }
+
+  &:focus {
+    outline: none;
+  }
+  
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+input {
+  accent-color: var(--primary-color);
+}
+ 
+.playground {
+  display: grid;
+  grid-template-areas:
+    "headline headline"
+    "imperative declarative";
+  margin: 0 auto;
+  inline-size: clamp(320px, 90vw, 960px);
+
+  h1 {
+    grid-area: headline;
+  }
+
+  h2 {
+    margin-block-end: 8px;
+  }
+
+  [id$="-programming"] {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 8px;
+  }
+}
+
+#imperative-programming {
+  grid-area: imperative;
+}
+
+#declarative-programming {
+  grid-area: declarative;
+}

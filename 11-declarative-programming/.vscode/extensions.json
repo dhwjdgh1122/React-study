@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "WallabyJs.quokka-vscode",
+    "sketchbuch.vsc-quokka-statusbar",
+    // "Tobermory.es6-string-html",
+    // "meganrogge.template-string-converter",
+    // "dsznajder.es7-react-js-snippets",
+  ]
+}
