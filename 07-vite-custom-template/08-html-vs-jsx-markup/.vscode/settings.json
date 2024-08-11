@@ -1,0 +1,134 @@
+{
+  // 에디터 설정
+  "editor.wordWrap": "off",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+
+  // 검색 제외
+  "search.exclude": {
+    "**/coverage": true,
+    "**/node_modules": true
+  },
+
+  // 파일 제외
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+
+  // 파일 형식
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    ".npmrc": "dotenv"
+  },
+
+  // 언어 별, 포멧터 설정
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  // Emmet 설정
+  "emmet.variables": {
+    "charset": "UTF-8",
+    "lang": "ko-KR"
+  },
+  "emmet.includeLanguages": {
+    "markdown": "html",
+    "mdx": "javascriptreact",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "attr_case": "lower",
+    "attr_quotes": "double",
+    "html": "xhtml",
+    "inline_break": 3,
+    "self_closing_tag": "xhtml",
+    "tag_case": "lower"
+  },
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+
+  // HTML 설정
+  "html.autoClosingTags": true,
+  "html.validate.styles": true,
+  "html.validate.scripts": true,
+  "html.format.wrapLineLength": 80,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 1,
+  "html.format.wrapAttributes": "force-expand-multiline",
+
+  // CSS 설정
+  "css.validate": true,
+  "css.lint.vendorPrefix": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  "css.completion.completePropertyWithSemicolon": true,
+
+  // JavaScript 설정
+  "javascript.autoClosingTags": true,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.paths": false,
+
+  // TypeScript 설정
+  "typescript.autoClosingTags": true,
+  "typescript.format.enable": false,
+  "typescript.validate.enable": true,
+  "typescript.check.npmIsInstalled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.paths": false,
+  
+  // Error Lens 설정
+  "errorLens.enabled": true,
+  "errorLens.codeLensEnabled": false,
+  "errorLens.fontSize": "14px",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "emoji",
+  "errorLens.gutterIconSize": "16px",
+  "errorLens.gutterEmoji": {
+    "error": "🧨",
+    "warning": "⚠️",
+    "info": "📢",
+    "hint": "🔔"
+  },
+
+}
