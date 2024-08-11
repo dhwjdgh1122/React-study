@@ -1,0 +1,45 @@
+.NoteDetailPage {
+
+  max-inline-size: 33rem;
+
+  h2 {
+    margin-block-end: 12px;
+    font-size: 42px;
+    font-weight: 300;
+  }
+
+  span {
+    display: inline-flex;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 2px 12px;
+    background: #fff;
+    color: #111;
+    margin-block-end: 24px;
+
+    a {
+      text-decoration: none;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    text-underline-offset: 6px;
+  }
+
+  p {
+    line-height: 2.4;
+    text-decoration: underline;
+    text-decoration-color: #4d4d55;
+    text-decoration-style: dashed;
+    text-underline-offset: 12px;
+  }
+
+}

@@ -1,0 +1,20 @@
+.ExpandableText {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+
+  margin-inline: 80px;
+  margin-block-end: 40px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  padding: 8px 20px;
+
+  button {
+    cursor: pointer;
+    margin-block-end: 8px;
+    border-radius: 2px;
+    background: #eee;
+    color: #111;
+    border: 0;
+  }
+}

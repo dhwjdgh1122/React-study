@@ -1,0 +1,67 @@
+.NoteForm {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  inline-size: clamp(320px, 60vw, 480px);
+  border: 0.5px solid rgba(255, 255, 255, 40%);
+  padding: 24px;
+
+  .formControl {
+    display: flex;
+    gap: 8px;
+    color: #c4c1d3;
+
+    label {
+      width: 3rem;
+      font-size: 14px;
+
+      &+* {
+        flex: 1;
+        font-size: 14px;
+        background: transparent;
+        border: 0.5px solid #777;
+        padding: 6px;
+        color: inherit;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:focus-visible {
+          border-color: currentColor;
+        }
+      }
+    }
+
+    textarea {
+      min-block-size: 7rem;
+      max-block-size: 12rem;
+    }
+
+    select {
+      padding: 6px 6px 6px 2px;
+    }
+
+  }
+
+  .buttonGroup {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+
+    button {
+      flex: 1;
+      padding: 12px;
+      opacity: 0.7;
+      border: 0.5px solid #777;
+      background: transparent;
+      color: inherit;
+      font-size: 14px;
+      font-weight: 700;
+
+      &:hover:not(:disabled) {
+        opacity: 1;
+      }
+    }
+  }
+}

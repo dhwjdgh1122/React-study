@@ -1,0 +1,11 @@
+.BackLink {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 12px 16px;
+  opacity: 0.55;
+
+  &:hover {
+    opacity: 1;
+  }
+}

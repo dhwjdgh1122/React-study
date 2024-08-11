@@ -1,0 +1,9 @@
+.UsersList {
+  list-style: none;
+  padding-inline-start: 0;
+
+  li {
+    margin-block-end: 4px;
+    font-size: 14px;
+  }
+}

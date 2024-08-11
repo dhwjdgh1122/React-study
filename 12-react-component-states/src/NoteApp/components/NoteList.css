@@ -1,0 +1,26 @@
+.NoteList {
+
+  ul {
+    padding-inline-start: 1rem;
+  }
+
+  li {
+    padding-block-end: 4px;
+
+    &:last-child {
+      padding-block-end: 0;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+    color: #aaa;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+}

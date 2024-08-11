@@ -1,0 +1,20 @@
+.NoteListPage {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+  align-items: start;
+
+  .createNoteLink {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #111;
+    opacity: 0.6;
+    font-weight: 700;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
