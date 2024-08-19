@@ -1,0 +1,35 @@
+.component {
+  color: #450fbf;
+
+  output {
+    padding: 0 12px;
+    font-weight: 500;
+    color: inherit;
+  }
+
+  svg {
+    --size: 12px;
+
+    inline-size: var(--size);
+    block-size: var(--size);
+    color: inherit;
+  }
+}
+
+.changeStep {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  margin-block-start: 20px;
+  color: #450fbf;
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    inline-size: 2.4rem;
+    color: inherit;
+    text-align: right;
+  }
+}

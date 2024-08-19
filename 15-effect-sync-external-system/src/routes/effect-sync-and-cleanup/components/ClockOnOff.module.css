@@ -1,0 +1,33 @@
+.component {
+  margin-block-start: 40px;
+  border: 4px solid var(--accent-color);
+  border-radius: var(--radius-full, 9999px);
+  padding: 20px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 12px;
+
+  button {
+    opacity: 0.95;
+    border: 0;
+    border-radius: var(--radius-full, 9999px);
+    padding: 8px 24px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 14px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  output {
+    order: -1;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+}

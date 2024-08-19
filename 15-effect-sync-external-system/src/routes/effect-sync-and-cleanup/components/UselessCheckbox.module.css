@@ -1,0 +1,18 @@
+.component {
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  block-size: 200px;
+  inline-size: 200px;
+  margin-block-start: 40px;
+  margin-inline: auto;
+  border: 3px solid var(--accent-color);
+  border-radius: var(--radius-full, 9999px);
+
+  input {
+    cursor: pointer;
+    accent-color: var(--accent-color);
+    block-size: 200px;
+    inline-size: 200px;
+  }
+}

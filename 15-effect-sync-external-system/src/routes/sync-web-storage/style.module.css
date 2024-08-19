@@ -1,0 +1,76 @@
+.component {
+  margin-block-start: 2px;
+  margin-inline-start: 20px;
+  color: #747178;
+
+  .headline {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--accent-color);
+  }
+
+  .description {
+    display: flex;
+    flex-flow: column;
+    gap: 0.3rem;
+    margin-inline-end: 24px;
+    margin-block-end: 24px;
+    font-size: 14px;
+
+    * {
+      margin: 0;
+    }
+  }
+
+  .control {
+    margin-block-end: 12px;
+
+    input {
+      padding: 8px;
+      border: 1px solid currentColor;
+      border-radius: 2px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .group {
+    display: flex;
+    gap: 12px;
+
+    button {
+      opacity: 0.6;
+      background-color: transparent;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 12px;
+      font-weight: 600;
+
+      &:hover {
+        opacity: 1;
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
+.button {
+  opacity: 0.9;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-weight: 800;
+  background-color: var(--accent-color);
+  color: var(--white);
+
+  &:hover {
+    opacity: 1;
+  }
+}

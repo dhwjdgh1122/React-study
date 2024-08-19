@@ -1,0 +1,36 @@
+.component {
+
+  --purple-100: #dacff2;
+  --purple-200: #b59fe5;
+  --purple-300: #8f6fd9;
+  --purple-400: #6a3fcc;
+  --purple-500: #450fbf;
+  --purple-600: #370c99;
+  --purple-700: #290973;
+  --purple-800: #1c064c;
+  --purple-900: #0e0326;
+  --purple-950: #5405ff;
+
+  margin-block: 40px;
+
+  .section {
+    position: relative;
+    display: grid;
+    place-content: center;
+    block-size: 25vh;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 0 4px 4px rgba(15 0 30 / 15%);
+    color: #fff;
+
+    span {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      font-size: 140px;
+    }
+  }
+
+}

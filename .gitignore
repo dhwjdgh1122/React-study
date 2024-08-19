@@ -1,7 +1,7 @@
 node_modules
 build
 dist
-
+pocketbase
 .DS_Store
 
 
