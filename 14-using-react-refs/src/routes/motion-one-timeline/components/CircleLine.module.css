@@ -1,0 +1,9 @@
+.component {
+  * {
+    visibility: hidden;
+  }
+
+  circle {
+    transform-origin: 189px center;
+  }
+}

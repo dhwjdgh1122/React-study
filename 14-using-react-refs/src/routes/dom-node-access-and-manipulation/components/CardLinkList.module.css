@@ -1,0 +1,9 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block: 60px;
+
+}

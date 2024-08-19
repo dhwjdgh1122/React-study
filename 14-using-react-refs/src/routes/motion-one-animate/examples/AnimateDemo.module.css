@@ -1,0 +1,61 @@
+.component {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 40px;
+  margin-block: 40px;
+
+  .button {
+    opacity: 0.9;
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-weight: 800;
+    background-color: var(--accent-color);
+    color: var(--white);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .lollipop {
+    --r: 30px;
+    --c1: #f6f6f6;
+    --c2: #562ec6;
+
+    margin: 0;
+    height: calc(2* var(--r));
+    aspect-ratio: 1;
+    clip-path: circle();
+    display: flex;
+
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+      --g1: radial-gradient(50% 50%, var(--c1) 99%, #0000) no-repeat;
+      --g2: radial-gradient(50% 50%, var(--c2) 99%, #0000) no-repeat;
+      background: var(--g1) calc(sin(60deg)* var(--r)) calc(var(--r) / -2), var(--g2) calc(var(--r) / 2) calc(sin(-60deg)* var(--r)), var(--g1) 0 calc(-1* var(--r)), var(--g2) calc(var(--r) / -2) calc(sin(-60deg)* var(--r)), var(--g1) calc(sin(-60deg)* var(--r)) calc(var(--r) / -2), var(--g2) calc(-1* var(--r)) 0, var(--g1) calc(sin(-60deg)* var(--r)) calc(var(--r) / 2);
+      background-size: 200%;
+    }
+
+    &:after {
+      rotate: 180deg;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+  }
+
+  .output {
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--accent-color);
+    text-align: center;
+  }
+
+}

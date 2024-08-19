@@ -1,0 +1,11 @@
+.component {
+
+  font-weight: 400;
+  letter-spacing: -0.3px;
+
+  &.active {
+    opacity: 1;
+    font-weight: 900;
+    color: var(--accent-color, #440fbf);
+  }
+}
